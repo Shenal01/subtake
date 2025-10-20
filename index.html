@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Take Over By Hacskm</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: radial-gradient(circle at center, #000000, #0f0f0f);
+      color: #00ff9f;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ff9f, 0 0 20px #00ff9f;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #b2fef7;
+    }
+
+    .glitch {
+      color: #00ff9f;
+      position: relative;
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px #ff00c8, -2px -2px #00fff7; }
+      20% { text-shadow: -2px 2px #ff00c8, 2px -2px #00fff7; }
+      40% { text-shadow: 2px -2px #ff00c8, -2px 2px #00fff7; }
+      60% { text-shadow: -2px -2px #ff00c8, 2px 2px #00fff7; }
+      80% { text-shadow: 2px 2px #ff00c8, -2px -2px #00fff7; }
+      100% { text-shadow: 0 0 10px #00ff9f, 0 0 20px #00ff9f; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="glitch">Take Over By Hacskm</h1>
+    <p>System Breached. Resistance is futile.</p>
+  </div>
+</body>
+</html>
